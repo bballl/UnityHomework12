@@ -58,7 +58,7 @@ public class CharacterSphereController : MonoBehaviour
     private void Movement()
     {
         Vector3 movement = new Vector3(inputController.GetHorizontal(), 0, inputController.GetVertical());
-        rb.AddForce(movement * speed * deltaTime, ForceMode.VelocityChange);
+        rb.AddForce(movement * speed * Time.deltaTime, ForceMode.VelocityChange);
     }
 
     /// <summary>
